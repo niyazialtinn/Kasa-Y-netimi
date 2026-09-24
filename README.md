@@ -1,11 +1,13 @@
-# Kasa Yönetimi
+# Kasa Yönetimi APK
 
-GitHub Pages için hazır mobil kasa takip uygulaması.
+GitHub Actions ile Android Studio kullanmadan APK üretir.
 
-1. GitHub'da yeni repository oluştur.
-2. Bu ZIP içindeki dosyaları repository ana dizinine yükle.
-3. Settings > Pages > Deploy from a branch seç.
-4. main ve /(root) seçip Save yap.
-5. Oluşan GitHub Pages adresini telefondan aç.
+## APK üretme
+1. Tüm dosyaları GitHub repository ana dizinine yükle.
+2. GitHub > Actions > Build Android APK.
+3. Run workflow > Run workflow.
+4. İşlem yeşil tik olunca çalıştırmaya tıkla.
+5. Artifacts bölümünden `KasaYonetimi-APK` indir.
+6. ZIP içindeki `app-debug.apk` dosyasını Android telefona kur.
 
-Kayıtlar telefondaki tarayıcıda localStorage ile saklanır.
+Veriler uygulamanın WebView localStorage alanında cihazda saklanır.
