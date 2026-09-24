@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kasa Yönetimi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main>
+
+    <h1>💰 Kasa Yönetimi</h1>
+
+    <section>
+        <h2 id="bank">Güncel Kasa</h2>
+        <p id="profit">Kâr/Zarar: 0,00 TL</p>
+    </section>
+
+    <section>
+
+        <label>
+            Risk %
+            <input
+                id="risk"
+                type="number"
+                value="20"
+                step="0.01">
+        </label>
+
+        <label>
+            Oran
+            <input
+                id="odds"
+                type="number"
+                placeholder="1.60"
+                step="0.01">
+        </label>
+
+        <p>
+            Oynanacak Tutar:
+            <b id="stake">0,00 TL</b>
+        </p>
+
+        <div>
+
+            <button
+                class="choice active"
+                data-v="KAZANDI">
+                ✅ KAZANDI
+            </button>
+
+            <button
+                class="choice"
+                data-v="FİRE">
+                🔥 FİRE
+            </button>
+
+        </div>
+
+        <button id="save">
+            Günü Kaydet
+        </button>
+
+    </section>
+
+    <section>
+
+        <h2>📋 Geçmiş</h2>
+
+        <div id="history"></div>
+
+        <button id="reset">
+            Tüm Geçmişi Sıfırla
+        </button>
+
+    </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
