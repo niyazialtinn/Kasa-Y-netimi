@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f4f6;
+    color: #111827;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 650px;
+    margin: auto;
+    padding: 18px;
+}
+
+h1 {
+    margin: 5px 0 18px;
+    font-size: 27px;
+}
+
+section {
+    background: white;
+    padding: 18px;
+    margin-bottom: 14px;
+    border-radius: 18px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin: 14px 0;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 7px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-size: 18px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+button {
+    padding: 13px 16px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.choice {
+    width: 47%;
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.choice.active {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.choice[data-v="FİRE"].active {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+#save {
+    width: 100%;
+    margin-top: 15px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+}
+
+#reset {
+    width: 100%;
+    margin-top: 15px;
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+#stake {
+    font-size: 19px;
+}
+
+.item {
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e7eb;
+    line-height: 1.7;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.win {
+    color: #15803d;
+}
+
+.fire {
+    color: #dc2626;
+}
